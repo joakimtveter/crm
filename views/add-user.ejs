@@ -1,1 +1,15 @@
+<%- include('../views/partials/head.ejs') %>
+<%- include('../views/partials/header.ejs') %>
 <h1>Add User</h1>
+
+<form action="post">
+    <label for="username">Username</label>
+    <Input type="text" id="username" name="Username"></Input>
+    <label for="password">Password</label>
+    <Input type="password" id="password" name="Password"></Input>
+    <label for="password">Repete password</label>
+    <Input type="password" id="repete-password" name="Password2"></Input>
+    <input type="submit" value="LAdd new user">
+</form>
+
+<%- include('../views/partials/footer.ejs') %>

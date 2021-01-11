@@ -1,0 +1,14 @@
+header {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav > ul {
+  display: flex;
+}
+
+.main-nav > ul > li {
+  text-decoration: none;
+  list-style: none;
+}

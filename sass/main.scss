@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@import "typography";
+@import "colorpalet";
+
+body {
+  font: $body-font;
+  font-weight: $font-weight-normal;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
+
+@import "header";
