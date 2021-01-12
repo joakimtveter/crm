@@ -1,17 +1,17 @@
 <%- include('../views/partials/head.ejs') %>
 <%- include('../views/partials/header.ejs') %>
-<main>
-    <h1>Login</h1>
-    <form action="post">
-        <label for="username">Username</label>
-        <Input type="text" id="username" name="Username"></Input>
-        <label for="password">Password</label>
-        <Input type="password" id="password" name="Password"></Input> 
-        <button class="view-password">Show password</button>
-        <input type="submit" value="Login">
-    </form>
-
-    
+<main class="page-content">
+    <div class="card big-center-card">
+        <h1>Login</h1>
+        <form action="post">
+            <label for="username">Username</label>
+            <Input type="text" id="username" name="Username"></Input>
+            <label for="password">Password</label>
+            <Input type="password" id="password" name="Password"></Input> 
+            <button class="view-password">Show password</button>
+            <input type="submit" value="Login">
+        </form>
+    </div>
 </main>
 <script src="/scripts/login.js"></script>
 

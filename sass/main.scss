@@ -1,20 +1,11 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 @import "typography";
-@import "colorpalet";
-
+@import "colorpallet";
+@import "resets";
 body {
-  font: $body-font;
+  font-family: $body-font;
   font-weight: $font-weight-normal;
 }
 
-h1 {
-  color: red;
-  text-align: center;
-}
-
 @import "header";
+@import "forms";
+@import "footer";
