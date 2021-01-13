@@ -1,21 +1,40 @@
 header {
   padding: 0 2em;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   color: var(--color-light);
   background-color: var(--color-primary);
-  justify-content: space-between;
 }
 
 // Logo & Branding Styles
+.logo-menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .branding {
   font-size: 2em;
   font-weight: 600;
+  color: var(--color-light);
+  text-decoration: none;
+}
+
+#menuButton {
+  background: none;
+  color: var(--color-light);
+  border: none;
 }
 
 // Navigation Styles
 .main-nav > ul {
   display: flex;
   text-decoration: none;
+  flex-direction: column;
+}
+
+.main-nav.hidden {
+  height: 0;
 }
 
 .main-nav > ul > li {
@@ -28,4 +47,22 @@ header {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+@media screen and (min-width: 650px) {
+  #menuButton {
+    display: none;
+  }
+
+  .main-nav > ul {
+    flex-direction: row;
+  }
+
+  header {
+    flex-direction: row;
+  }
+
+  .main-nav.hidden {
+    height: auto;
+  }
 }

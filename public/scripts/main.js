@@ -8,3 +8,6 @@ function footerToBottom() {
     let content = document.querySelector(".page-content");
     content.style.minHeight = "calc( 100vh - " + headerFooterHeight + "px )";
 }
+
+// Mobile Menu Show and hide
+

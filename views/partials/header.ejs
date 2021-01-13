@@ -1,6 +1,9 @@
 <header class="page-header">
-  <a href="/"><div class="branding">My CRM</div></a>
-  <nav class="main-nav">
+  <div class="logo-menu-wrapper">
+    <a href="/" class="branding">My CRM</a>
+    <button id="menuButton" class="menu-btn">Menu</button>
+  </div>
+  <nav class="main-nav hidden">
     <ul>
       <li><a href="/contacts">Contacts</a></li>
       <li><a href="/companies">Companies</a></li>
@@ -8,4 +11,13 @@
       <li><a href="/logout">Log out</a></li>
     </ul>
   </nav>
+  <script>
+    const menuButton = document.querySelector("#menuButton");
+    const navMenu = document.querySelector(".main-nav");
+
+    menuButton.addEventListener("click", function () {
+      navMenu.classList.toggle("hidden");
+      console.log("menu");
+    });
+  </script>
 </header>

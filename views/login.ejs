@@ -1,16 +1,24 @@
 <%- include('../views/partials/head.ejs') %>
 <%- include('../views/partials/header.ejs') %>
 <main class="page-content">
-    <div class="card big-center-card">
-        <h1>Login</h1>
-        <form action="post">
-            <label for="username">Username</label>
-            <Input type="text" id="username" name="Username"></Input>
-            <label for="password">Password</label>
-            <Input type="password" id="password" name="Password"></Input> 
-            <button class="view-password">Show password</button>
-            <input type="submit" value="Login">
-        </form>
+    <div class="content-wraper">
+        <div class="card big-center-card">
+            <h1>Login</h1>
+            <form action="/login" method="POST">
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="Username"></input>
+                </div>
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="Password" />
+                    <a href="#" class="view-password"><i class="far fa-eye"></i></a>
+                </div>
+                
+                <input type="submit" value="Login">
+            </form>
+            <a href="forgotten-password">Forgot password?</a>
+        </div>
     </div>
 </main>
 <script src="/scripts/login.js"></script>
